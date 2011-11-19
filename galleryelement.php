@@ -9,17 +9,17 @@ class galleryElement {
     private $description;
     private $date;
     private $tags;
-    
+
     private $found;
-    
+
     private static $allTags = array();
-    
+
     public function galleryElement($name, $image, $href, $description, $date, $tags){
         $this->tags = array();
-        
-        
+
+
         $found = false;
-        
+
         $this->name = $name;
         $this->image = $image;
         $this->href = $href;
@@ -27,11 +27,11 @@ class galleryElement {
         $this->date = $date;
         $this->tags = $tags;
     }
-    
+
     public function getName(){
         return $this->name;
     }
-    
+
     public function getImage(){
         return $this->image;
     }
@@ -39,25 +39,34 @@ class galleryElement {
     public function getHref(){
         return $this->href;
     }
-    
+
     public function getDescription(){
         return $this->description;
     }
-    
+
     public function getDate(){
         return $this->date;
     }
-    
+
     public function getTags(){
         return $this->tags;
     }
-    
+
     public function getAllTags(){
         return self::$allTags;
     }
 }
 
 $elements = array();
+
+$elements[] = new galleryElement(
+    "space_dad",
+    "images/gallery/spacedad.png",
+    "http://twitter.com/space_dad",
+    "I built this Twitter bot as a hobby project over the 2011/2012 school year. It's driven by a python script that scrapes Urban Dictionary, a slew of questionable free ebooks, and a number of other sources for content and tweets that content every once in a while. Sometimes, just to keep things interesting, it translates its tweets to Japanese and then back to English. The goal here is non-sequitur based comedy, and so far space_dad seems to be doing well. Source on <a href='http://github.com/emmett9001/python_bits/blob/master/twit_bot.py'>Github</a> and <a href='http://github.com/emmett9001/python_bits/blob/master/scraper.py'>the scraper</a>",
+    "11/19/2011",
+    array("programming", "python", "twitter", "bot", "hack")
+);
 
 $elements[] = new galleryElement(
     "TumblrTV",
@@ -214,14 +223,14 @@ $elements[] = new galleryElement(
 
 foreach($elements as $current){
     if(in_array($_GET['filter'], $current->getTags()) || $filter == "all"){
-        
+
         $size=getimagesize($current->getImage());
         $width=$size[0];
         $height=$size[1];
         $scale=$width/80;
         $thumb_width=80;
         $thumb_height=$size[1]/$scale;
-        
+
         echo "<div id=\"gallery-entry\">";
         echo "<div id=\"gallery-entry-image\">";
         echo "<a target=\"_blank\" href=\"" . $current->getHref() . "\"><img src=\"" . $current->getImage() . "\" width=" . $thumb_width . " height=" . $thumb_height . "></a><br/>";

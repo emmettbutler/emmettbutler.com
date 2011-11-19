@@ -1,31 +1,31 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html>
-    
+
     <head>
-        
+
         <title>Emmett Butler: Contact</title>
-        
+
         <meta name="author" content="Emmett Butler for http://emmettbutler.com">
         <meta name="keywords" content="Emmett,Butler,web,design,programmer,musician,music,drawing,draw,games,person,NYU"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=7" />
-            
+
         <link rel="stylesheet" href="style.css">
-        <link href="favicon.ico" rel="shortcut icon" type="image/ico" />    
-        
+        <link href="favicon.ico" rel="shortcut icon" type="image/ico" />
+
         <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-        
+
     </head>
-    
+
     <body>
-        
+
         <div id="main">
-            
+
             <?php include("header.html"); ?>
-            
+
             <div id="boxwrapper-left">
                 <div id="boxtop-left"></div>
                 <div id="box-left">
@@ -39,6 +39,7 @@
                             <a target=\"_blank\" title="@emmett9001" href="http://twitter.com/emmett9001"><img src="images/media_icons/twitter.png" width=64 height=64 /></a>
 			                <a target=\"_blank\" title="Github" href="http://github.com/emmett9001"><img src="images/media_icons/github.png" width=64 height=64 /></a>
                             <a target=\"_blank\" title="emmett9001" href="http://emmett9001.tumblr.com"><img src="images/media_icons/tumblr.png" width=64 height=64 /></a>
+                            <a target=\"_blank\" title="LinkedIn" href="http://linkedin.com/in/emmett9001"><img src="images/media_icons/linkedin.png" width=64 height=64 /></a>
                             <a target=\"_blank\" title="Raised by Robots" href="http://soundcloud.com/raised-by-robots"><img src="images/media_icons/soundcloud.png" width=64 height=64 /></a>
                             <a target=\"_blank\" title="Google+" href="https://plus.google.com/110766953489760687934/about"><img src="images/media_icons/gplus.png" width=64 height=64 /></a>
                         </section>
@@ -46,12 +47,12 @@
                 </div>
                 <div id="boxbottom-left"></div>
             </div>
-            
+
             <div id="boxwrapper-right">
                 <div id="boxtop-right"></div>
                 <div id="box-right">
                     <div id="box-header">
-                        
+
                     </div>
                     <div id="box-content">
                         <p>You can send me an email using the form below. Name and subject are optional, but I probably won't read an email that doesn't have them.</p>
@@ -72,11 +73,11 @@
                 </div>
                 <div id="boxbottom-right"></div>
             </div>
-            
+
             <?php include("footer.html"); ?>
-            
+
         </div>
-        
+
     </body>
-    
+
 </html>
