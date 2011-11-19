@@ -63,7 +63,7 @@ $elements[] = new galleryElement(
     "space_dad",
     "images/gallery/spacedad.png",
     "http://twitter.com/space_dad",
-    "I built this Twitter bot as a hobby project over the 2011/2012 school year. It's driven by a python script that scrapes Urban Dictionary, a slew of questionable free ebooks, and a number of other sources for content and tweets that content every once in a while. Sometimes, just to keep things interesting, it translates its tweets to Japanese and then back to English. The goal here is non-sequitur based comedy, and so far space_dad seems to be doing well. Source on <a href='http://github.com/emmett9001/python_bits/blob/master/twit_bot.py'>Github</a> and <a href='http://github.com/emmett9001/python_bits/blob/master/scraper.py'>the scraper</a>",
+    "I built this Twitter bot as a hobby project over the 2011/2012 school year. It's driven by a python script that scrapes Urban Dictionary, a slew of questionable free ebooks, and a number of other sources for content and tweets that content every once in a while. Sometimes, just to keep things interesting, it translates its tweets to Japanese and then back to English. The goal here is non-sequitur based comedy, and so far space_dad seems to be doing well. DISCLAIMER: Please don't hold me responsible for the things he tweets, I don't write them. Source on <a href='http://github.com/emmett9001/python_bits/blob/master/twit_bot.py'>Github</a> and <a href='http://github.com/emmett9001/python_bits/blob/master/scraper.py'>the scraper</a>",
     "11/19/2011",
     array("programming", "python", "twitter", "bot", "hack")
 );
