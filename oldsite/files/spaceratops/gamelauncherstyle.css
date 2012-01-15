@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, Sans-Serif;
+    background-color: #000000;
+    color: #fff600;
+    background-image: url(bg.png);
+    background-repeat: repeat;
+}
+
+a:link, a:visited {
+	color: #fff600;
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	color: #ff0000;
+	text-decoration: none;
+}
+

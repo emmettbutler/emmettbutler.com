@@ -1,0 +1,569 @@
+#main{
+        margin-left: auto;
+        margin-right: auto;
+        width: 1000px;
+        display: block;
+        background-color: #292929;
+        padding: 0px 12px 8px 12px;
+        color: #fff900;
+        text-align: left;
+}
+
+div {
+        undo zoom: 1;
+}
+
+body{
+        font-family: Georgia;
+        font-size: 10pt;
+        background-color: #1e1e1e;
+        text-align: center;
+        line-height: 150%;
+}
+
+a img {
+        border: none;
+}
+
+#head{
+        margin-bottom: 15px;
+        padding: 2px 2px 2px 2px;
+        width: 800px;
+        float: left;
+}
+
+#headimage{
+        display: block;
+        width: 178px;
+        height: 200px;
+        float: right;
+}
+
+#title{
+        width: 484px;
+        height: 159px;
+        font-size: 20pt;
+        margin: 3px;
+        margin-bottom: 18px;
+        float: left;
+}
+
+#oneline{
+        margin-top: 5px;
+}
+
+#oneline ul{
+        list-style: none;
+}
+
+#oneline ul li {
+        margin-bottom: 15px;        
+}
+
+#nav{
+        clear: both;
+}
+
+#nav ul {
+        list-style: none;
+}
+
+#nav ul li {
+        display: block;
+        float: left;
+        margin-right: 25px;
+}
+
+#biolink{
+        background: url(/images/bio.png) no-repeat 0 0;
+        width: 47px;
+        display: block;
+        height: 15px;
+}
+
+#biolink:hover, #biolink:focus{
+        background-position: 0 -15px;
+}
+
+#biolink span{
+        position: absolute;
+        top: -999px;
+}
+#resumelink{
+        margin-top: 4px;
+        background: url(/images/resume.png) no-repeat 0 0;
+        width: 96px;
+        display: block;
+        height: 11px;
+}
+
+#resumelink:hover, #resumelink:focus{
+        background-position: 0 -11px;
+}
+
+#resumelink span{
+        position: absolute;
+        top: -999px;
+}
+#gallerylink{
+        background: url(/images/gallery.png) no-repeat 0 0;
+        width: 115px;
+        display: block;
+        height: 17px;
+}
+
+#gallerylink:hover, #gallerylink:focus{
+        background-position: 0 -17px;
+}
+
+#gallerylink span{
+        position: absolute;
+        top: -999px;
+}
+#contactlink{
+        background: url(/images/contact.png) no-repeat 0 0;
+        width: 115px;
+        display: block;
+        margin-top: 2px;
+        height: 13px;
+}
+
+#contactlink:hover, #contactlink:focus{
+        background-position: 0 -13px;
+}
+
+#contactlink span{
+        position: absolute;
+        top: -999px;
+}
+
+#resume h2{
+        color:  #ffb500;
+}
+
+/*Tumblr*/
+#tumblr{
+        width: 413px;
+        float: right;
+        clear: right;
+        background: url(images/boxmiddleleft.png) top left repeat-y;
+        undo zoom: 1;
+}
+
+#tumblelog-title {
+        margin: 1em;
+        text-align: right;
+        float: right;
+}
+
+#tumblr-body {
+        width: 413px;
+        background: url(images/boxmiddleleft.png) top left repeat-y;
+        float: right;
+}
+
+#tumblr-body ol {
+        width: 330px;
+        list-style: none;
+}
+#tumblr-body ol li {
+        border-top: 5px dotted #a200ff;
+        padding: 20px 0px 20px 0px;
+}
+
+#tumblr-body img {
+        margin-left: 5px;
+        width: 300px;
+}
+
+#tumblrwrapper{
+        float: right;
+        width: 413px;
+}
+
+#tumblrboxtop{
+        background: url(images/tumblrboxtopleft.png) top left no-repeat;
+        height: 4px;
+        width: 413px;
+        float: right;
+        font-size: 0;
+        line-height: 0;
+        undo zoom: 1;
+}
+
+#tumblrboxbottom{
+        margin-bottom: 1.1em;
+        float: right;
+        clear: both;
+        background: url(images/tumblrboxtopleft.png) top left no-repeat;
+        height: 4px;
+        width: 413px;        
+}
+
+/*Twitter*/
+
+#twitterwrapper{
+        float: left;
+        width: 570px;
+}
+
+section#tweet{
+        width: 90%;
+        padding: .2em;
+        padding-bottom: .75em;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+section#tweet-timestamp{
+        font-style: italic;
+        margin-top: .2em;
+        font-size: 9pt;
+        margin-bottom: .2em;
+        color: #ffd800;
+}
+
+#twitter {
+        width: 571px;
+        float: left;
+        background: url(images/boxmiddleleft.png) top left repeat-y;
+}
+
+#twitter-title {
+        margin: 10px 0px 15px 18px;
+        padding-top: 5px;
+        font-size: 16pt;
+}
+
+#twitter ul {
+        display: block;
+        width: 90%;
+}
+
+#twitter ul li {
+        margin-top: 12px;
+}
+
+#twitter a {
+        target: _blank;
+}
+
+#contact-type {
+        color: #ffd800;
+}
+
+/*Boxes*/
+
+#boxwrapper-left{
+        float: left;
+        width: 570px;
+        display: block;
+        margin-bottom: 16px;
+}
+
+#boxwrapper-right{
+        float: right;
+        width: 413px;
+        display: block;
+        margin-bottom: 16px;
+}
+
+#box-left{
+        float: left;
+        display: block;
+        width: 570px;
+        padding: 15px;
+        background: url(images/boxmiddleleft.png) top left repeat-y;
+}
+
+#box-right{
+        float: left;
+        display: block;
+        width: 384px;
+        padding: 15px;
+        background: url(images/boxmiddleleft.png) top left repeat-y;
+}
+
+#boxtop-left{
+        background: url(images/boxtopleft.png) top left no-repeat;
+        display: block;
+        height: 4px;
+        width: 566px;
+        float: left;
+        font-size: 0;
+        line-height: 0;
+        undo zoom: 1;
+}
+
+#boxbottom-left{
+        background: url(images/boxtopleft.png) top left no-repeat;
+        height: 4px;
+        width: 566px;
+        float: left;
+}
+
+#boxtop-right{
+        background: url(images/boxtopleft.png) top left no-repeat;
+        display: block;
+        height: 4px;
+        width: 409px;
+        float: left;
+        font-size: 0;
+        line-height: 0;
+        undo zoom: 1;
+}
+
+#boxbottom-right{
+        background: url(images/boxtopleft.png) top left no-repeat;
+        height: 4px;
+        width: 409px;
+        float: left;
+}
+
+#box-header {
+        width: 486px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+        font-size: 20pt;
+}
+
+#box-header a:link, #box-header a:visited, #box-header a:hover, #box-header a:focus {
+        color: #fff900;
+}
+
+#box-content {
+        margin-left: 30px;
+        width: 90%;
+}
+
+#form-labels {
+        display: block;
+        width: 1px;
+        float: left;
+        line-height: 100%;
+}
+
+#label-name {
+        margin-left: 18px;
+}
+
+#label-sub {
+        margin-left: 11px;
+}
+
+#label-message {
+        margin-left: 0px;
+}
+
+#label-name, #label-sub, #label-message {
+        margin-bottom: 9px;
+        color: #ffb500;
+}
+
+#form {
+        display: block;
+        float: right;
+        width: 280px;
+        undo zoom: 1;
+}
+
+#form input{
+        width: 100%;
+        margin-bottom: 3px;
+        undo zoom: 1;
+}
+
+#form input.submit{
+        width: 100px;
+        height: 20px;
+        undo zoom: 1;
+}
+
+
+#form textarea {
+        width: 100%;
+        undo zoom: 1;
+        overflow: hidden;
+}
+
+form {
+        float: left;
+        undo zoom: 1;
+}
+
+
+section#contact-list{
+        margin-top: 20px;
+        margin-left: 15px;
+}
+
+#notify {
+        width: 90%;
+        clear: both;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18pt;
+}
+
+.input {
+        border: 1px solid #ffb500;
+        background: #555555;
+        color: #ffffff;
+}
+
+/*Blog feed*/
+
+#blogwrapper{
+        float: left;
+        width: 570px;
+        margin-bottom: 16px;
+}
+
+#blog{
+        float: left;
+        width: 570px;
+        background: url(images/boxmiddleleft.png) top left repeat-y;
+        text-align: center;
+}
+
+#blog-header{
+        padding: 10px;
+        margin-left: 13px;
+        width: 300px;
+        float: left;
+        text-align: left;
+}
+
+section{
+        display: block;
+        white-space: normal;
+        text-align: left;
+        clear: both;
+}
+
+section#entry{
+        width: 90%;
+        margin-bottom: 6px;
+        margin-top: 10px;
+        padding: 10px;
+        padding-bottom: 12px;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+section#blogpost-name{
+        font-size: 16pt;
+        border-bottom: 1px solid #ffd800;
+        color: #c000ff;
+}
+
+section#blogpost-name a:link, section#blogpost-name a:visited{
+    text-decoration: none;
+    color: #c000ff;
+}
+
+section#blogpost-name a:hover, section#blogpost-name a:focus{
+    text-decoration: underline;
+    color: #c000ff;
+}
+
+section#timestamp{
+        font-style: italic;
+        margin-top: .2em;
+        font-size: 9pt;
+        text-align: right;
+        margin-bottom: .2em;
+        color: #ffd800;
+}
+
+section#summary{
+
+}
+
+section#summary a:link, section#summary a:visited{
+        text-decoration: none;
+        color: #fff900;
+}
+
+section#summary a:hover, section#summary a:focus{
+        text-decoration: underline;
+        color: #fff900;
+}
+
+#footer{
+        clear: both;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 3em;
+        text-align: center;
+        font-style: italic;
+        font-size: 8pt;
+        line-height: 100%;
+}
+
+a:link, a:visited {
+        text-decoration: none;
+        color: #ffb500;
+}
+
+a:hover, a:focus {
+        text-decoration: underline;
+        color: #ffb500;
+}
+
+/*Gallery*/
+#gallery-entry-content{
+        float: right;
+        width: 405px;
+        padding-right: 10px;
+        margin-bottom: 50px;
+}
+
+#gallery-entry-image{
+        float: left;
+        clear: both;
+        width: 80px;
+        height: 80px;
+}
+
+#gallery-entry-timestamp{
+        font-style: italic;
+        margin-top: .2em;
+        font-size: 9pt;
+        text-align: right;
+        margin-bottom: .2em;
+        color: #ffd800;
+}
+
+#gallery-entry-tags{
+        float: right;
+        font-style: italic;
+        margin-top: 5px;
+}
+
+#gallery-entry-title{
+        font-size: 16pt;
+        border-bottom: 1px solid #ffd800;
+        color: #c000ff;
+        margin-bottom: 4px;
+}
+
+#gallery-entry-title a:link, #gallery-entry-title a:visited{
+    text-decoration: none;
+    color: #c000ff;
+}
+
+#gallery-entry-title a:hover, #gallery-entry-title a:focus{
+    text-decoration: underline;
+    color: #c000ff;
+}
+
+#followlink {
+        float: right;
+        text-align: right;
+        width: 70%;
+        margin-right: 10px;
+        margin-bottom: 10px;
+}
