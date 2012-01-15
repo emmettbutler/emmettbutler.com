@@ -42,7 +42,7 @@ body {
     width: 70px;
     height: 64px;
     display: block;
-    top: 449;
+    top: 400;
     left: 73;
 }
 
@@ -77,11 +77,11 @@ body {
 }
 
 #wordpress {
-    background: url(static/img/wordpress.png) no-repeat 0 -120;
+    background: url(static/img/wordpress.png) no-repeat 0 -70;
     width: 70px;
-    height: 120px;
+    height: 70px;
     display: block;
-    top: 625;
+    top: 576;
     left: 419;
 }
 
