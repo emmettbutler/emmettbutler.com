@@ -75,7 +75,7 @@ a img {
 }
 
 #biolink{
-        background: url(/images/bio.png) no-repeat 0 0;
+        background: url(images/bio.png) no-repeat 0 0;
         width: 47px;
         display: block;
         height: 15px;
@@ -91,7 +91,7 @@ a img {
 }
 #resumelink{
         margin-top: 4px;
-        background: url(/images/resume.png) no-repeat 0 0;
+        background: url(images/resume.png) no-repeat 0 0;
         width: 96px;
         display: block;
         height: 11px;
@@ -106,7 +106,7 @@ a img {
         top: -999px;
 }
 #gallerylink{
-        background: url(/images/gallery.png) no-repeat 0 0;
+        background: url(images/gallery.png) no-repeat 0 0;
         width: 115px;
         display: block;
         height: 17px;
@@ -121,7 +121,7 @@ a img {
         top: -999px;
 }
 #contactlink{
-        background: url(/images/contact.png) no-repeat 0 0;
+        background: url(images/contact.png) no-repeat 0 0;
         width: 115px;
         display: block;
         margin-top: 2px;
