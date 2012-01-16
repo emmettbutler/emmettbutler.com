@@ -105,24 +105,6 @@ $elements[] = new galleryElement(
 );
 
 $elements[] = new galleryElement(
-    "Make It Sexy",
-    "images/gallery/sexy.png",
-    "images/gallery/sexy.png",
-    "This is the new house rule. Made it as a score for a friend's experimental music composition. That's right, it's the score.",
-    "5/2/2011",
-    array("drawing", "pixel", "dinosaurs")
-);
-
-$elements[] = new galleryElement(
-    "Dinosaur Deathtrap album cover",
-    "images/gallery/dinodeathtrap.png",
-    "images/gallery/dinodeathtrap.png",
-    "This is a picture I drew to be used as an album cover. I wanted to do something that involved a high degree of radness, and I think this about does it.",
-    "3/27/2011",
-    array("drawing", "pixel", "dinosaurs")
-);
-
-$elements[] = new galleryElement(
     "Spaceratops",
     "images/gallery/spaceratops.png",
     "files/spaceratops/launch.html",
@@ -159,15 +141,6 @@ $elements[] = new galleryElement(
 );
 
 $elements[] = new galleryElement(
-    "I Feel Pretty",
-    "images/gallery/prettysmall.gif",
-    "images/gallery/prettysmall.gif",
-    "The original sharpie drawing of this little guy is still hanging on my door. This is my first foray into pixel art, and into the creation of animated gifs.",
-    "2/5/2011",
-    array("drawing", "pixel", "animation")
-);
-
-$elements[] = new galleryElement(
     "Level One",
     "images/gallery/notes.png",
     "http://soundcloud.com/raised-by-robots/level-one",
@@ -183,24 +156,6 @@ $elements[] = new galleryElement(
     "I produced and co-engineered this bluegrass version of \"Get Low\" by Lil' Jon and the East Side Boyz. We were going for ridiculosity with a refined touch - we at least succeeded in making it ridiculous.",
     "12/10/2010",
     array("music", "bluegrass")
-);
-
-$elements[] = new galleryElement(
-    "The Booktopus",
-    "images/gallery/booktopussmall.png",
-    "images/gallery/booktopussmall.png",
-    "A product of my occasionally-overactive imagination, all the booktopus really wants is to be read.",
-    "10/20/2010",
-    array("drawing")
-);
-
-$elements[] = new galleryElement(
-    "Sonic the Hedgehog pencil drawing",
-    "images/gallery/sonicsmall.png",
-    "images/gallery/sonicsmall.png",
-    "It occurred to me one day that I could make some cool looking stuff if I scanned my drawings and enhanced them. Then I drew this picture of Sonic, the quality of which is still surprising to me.",
-    "10/15/2010",
-    array("drawing")
 );
 
 $elements[] = new galleryElement(

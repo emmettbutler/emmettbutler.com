@@ -6,7 +6,7 @@
     <title>Emmett Butler: Programmer, Musician, Person</title>
     
     <meta name="author" content="Emmett Butler for http://emmettbutler.com"/>
-    <meta name="keywords" content="Emmett,Butler,web,design,programmer,music,drawing,NYU,technology,computer,science,programming,black,mountain,scorpion,bluegrass,experience,gang"/>
+    <meta name="keywords" content="Emmett,Butler,web,design,programmer,music,drawing,NYU,technology,computer,science,programming"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
     
