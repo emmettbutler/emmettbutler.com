@@ -1,7 +1,7 @@
 body { 
     font-family: Arial;
     font-size: 9pt;
-    color: #666;
+    color: #555;
 }
 
 #oldsite {
@@ -14,7 +14,7 @@ body {
     margin-right: auto;
     margin-top: -300px;
     padding: 0;
-    width: 900px;
+    width: 838px;
 }
 
 .imgwrapper {
@@ -42,8 +42,8 @@ body {
     width: 70px;
     height: 64px;
     display: block;
-    top: 400;
-    left: 73;
+    top: 413;
+    left: 68;
 }
 
 #twitter:hover, #twitter:focus {
@@ -55,8 +55,8 @@ body {
     width: 130px;
     height: 130px;
     display: block;
-    top: 269;
-    left: 250;
+    top: 282;
+    left: 245;
 }
 
 #github:hover, #github:focus {
@@ -64,12 +64,12 @@ body {
 }
 
 #facebook {
+    display: block;
     background: url(static/img/facebook.png) no-repeat 0 -33;
     width: 94px;
     height: 33px;
-    display: block;
-    top: 469;
-    left: 713;
+    top: 482;
+    left: 708;
 }
 
 #facebook:hover, #facebook:focus {
@@ -81,8 +81,8 @@ body {
     width: 70px;
     height: 70px;
     display: block;
-    top: 576;
-    left: 419;
+    top: 589;
+    left: 414;
 }
 
 #wordpress:hover, #wordpress:focus {
@@ -94,8 +94,8 @@ body {
     width: 70px;
     height: 31px;
     display: block;
-    top: 358;
-    left: 565;
+    top: 371;
+    left: 560;
 }
 
 #soundcloud:hover, #soundcloud:focus {
@@ -106,4 +106,15 @@ body {
     display: block;
     top: 490;
     left: 150;
+}
+
+#chrome {
+    margin-top: 80px;
+    font-size: 8pt;
+    text-align: center;
+}
+
+#chrome a {
+    text-decoration: none;
+    color: #888;
 }
