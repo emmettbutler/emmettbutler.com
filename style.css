@@ -42,7 +42,7 @@ body {
     width: 70px;
     height: 64px;
     display: block;
-    top: 470;
+    top: 496;
     left: 68;
 }
 
@@ -55,7 +55,7 @@ body {
     width: 130px;
     height: 130px;
     display: block;
-    top: 344;
+    top: 370;
     left: 245;
 }
 
@@ -68,7 +68,7 @@ body {
     background: url(static/img/facebook.png) no-repeat 0 -33;
     width: 94px;
     height: 33px;
-    top: 539;
+    top: 565;
     left: 708;
 }
 
@@ -81,7 +81,7 @@ body {
     width: 70px;
     height: 70px;
     display: block;
-    top: 646;
+    top: 672;
     left: 414;
 }
 
@@ -94,7 +94,7 @@ body {
     width: 70px;
     height: 31px;
     display: block;
-    top: 428;
+    top: 454;
     left: 560;
 }
 
@@ -107,13 +107,27 @@ body {
     width: 50px;
     height: 71px;
     display: block;
-    top: 248;
+    top: 274;
     left: 74;
 }
 
 #spaceratops:hover, #spaceratops:focus {
     background-position: 0 0px;
 }
+
+#tumblr {
+    background: url(static/img/tumblr.png) no-repeat 0 -26;
+    width: 100px;
+    height: 26px;
+    display: block;
+    top: 338;
+    left: 246;
+}
+
+#tumblr:hover, #tumblr:focus {
+    background-position: 0 0px;
+}
+
 
 #tagline {
     display: block;
