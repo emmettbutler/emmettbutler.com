@@ -42,7 +42,7 @@ body {
     width: 70px;
     height: 64px;
     display: block;
-    top: 496;
+    top: 516;
     left: 68;
 }
 
@@ -55,7 +55,7 @@ body {
     width: 130px;
     height: 130px;
     display: block;
-    top: 370;
+    top: 390;
     left: 245;
 }
 
@@ -68,7 +68,7 @@ body {
     background: url(static/img/facebook.png) no-repeat 0 -33;
     width: 94px;
     height: 33px;
-    top: 565;
+    top: 585;
     left: 708;
 }
 
@@ -81,7 +81,7 @@ body {
     width: 70px;
     height: 70px;
     display: block;
-    top: 672;
+    top: 692;
     left: 414;
 }
 
@@ -94,7 +94,7 @@ body {
     width: 70px;
     height: 31px;
     display: block;
-    top: 454;
+    top: 474;
     left: 560;
 }
 
@@ -102,16 +102,16 @@ body {
     background-position: 0 0px;
 }
 
-#spaceratops {
-    background: url(static/img/spaceratops.png) no-repeat 0 -71;
-    width: 50px;
-    height: 71px;
+#game {
+    background: url(static/img/dokideux.png) no-repeat 0 -90;
+    width: 45px;
+    height: 90px;
     display: block;
-    top: 274;
-    left: 74;
+    top: 422;
+    left: 65;
 }
 
-#spaceratops:hover, #spaceratops:focus {
+#game:hover, #game:focus {
     background-position: 0 0px;
 }
 
