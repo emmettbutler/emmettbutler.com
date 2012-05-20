@@ -60,6 +60,15 @@ class galleryElement {
 $elements = array();
 
 $elements[] = new galleryElement(
+    "Dokideux Panikku",
+    "images/gallery/dokideux.png",
+    "../dokideux",
+    "My friend <a href='http://twitter.com/radstronomical'>Diego</a> and I made this game in a matter of hours for the What Would Molydeux? game jam. It's a classic platformer proof-of-concept with the added twist that the character you control is scared of you. If you press the buttons too fast, he gets freaked out and freezes in terror. Made with Actionscript Flixel. Source on <a href='https://github.com/emmett9001/Dokideux-Panikku'>Github</a>",
+    "4/1/2012",
+    array("programming", "game", "twitter", "actionscript", "flash", "flixel")
+);
+
+$elements[] = new galleryElement(
     "space_dad",
     "images/gallery/spacedad.png",
     "http://twitter.com/space_dad",
