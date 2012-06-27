@@ -1,0 +1,36 @@
+html {
+    background-color: #EEE;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+
+body {
+    width: 1000px;
+    border: 1px solid #222;
+    border-radius: 5px;
+    -mozilla-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #6b8bff;
+    padding: 7px;
+}
+
+h1 {
+    font-size: 26pt;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+    color: #000;
+}
+
+p {
+    font-size: 10pt;
+}

@@ -42,7 +42,7 @@ body {
     width: 70px;
     height: 64px;
     display: block;
-    top: 516;
+    top: 506;
     left: 68;
 }
 
@@ -76,16 +76,16 @@ body {
     background-position: 0 0px;
 }
 
-#wordpress {
-    background: url(static/img/wordpress.png) no-repeat 0 -70;
-    width: 70px;
-    height: 70px;
+#headsup{
+    background: url(static/img/headsup.png) no-repeat 0 -57;
+    width: 57px;
+    height: 57px;
     display: block;
-    top: 692;
-    left: 414;
+    top: 685;
+    left: 419;
 }
 
-#wordpress:hover, #wordpress:focus {
+#headsup:hover, #headsup:focus {
     background-position: 0 0px;
 }
 
