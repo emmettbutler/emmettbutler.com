@@ -42,7 +42,7 @@ body {
     width: 70px;
     height: 64px;
     display: block;
-    top: 506;
+    top: 520;
     left: 68;
 }
 
@@ -63,16 +63,16 @@ body {
     background-position: 0 0px;
 }
 
-#facebook {
+#careers{
     display: block;
-    background: url(static/img/facebook.png) no-repeat 0 -33;
-    width: 94px;
-    height: 33px;
-    top: 585;
-    left: 708;
+    background: url(static/img/careers.png) no-repeat 0 -48;
+    width: 60px;
+    height: 48px;
+    top: 514;
+    left: 62;
 }
 
-#facebook:hover, #facebook:focus {
+#careers:hover, #careers:focus {
     background-position: 0 0px;
 }
 
@@ -81,7 +81,7 @@ body {
     width: 57px;
     height: 57px;
     display: block;
-    top: 685;
+    top: 702;
     left: 419;
 }
 
