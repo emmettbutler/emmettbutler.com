@@ -1,5 +1,10 @@
+@font-face {
+    font-family: jalane;
+    src: url(static/fonts/lane.ttf);
+}
+
 body {
-    font-family: "pragmatica-web", sans-serif;
+    font-family: "pragmatica-web", jalane, sans-serif;
     font-size:22pt;
     color: #555;
 }
