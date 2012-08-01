@@ -1,12 +1,13 @@
-body { 
-    font-family: Arial;
-    font-size:10pt;
+body {
+    font-family: "pragmatica-web", sans-serif;
+    font-size:22pt;
     color: #555;
 }
 
 #oldsite {
     color: #666;
     text-decoration: none;
+    font-size: 10pt;
 }
 
 #wrapper {
@@ -42,7 +43,7 @@ body {
     width: 70px;
     height: 64px;
     display: block;
-    top: 520;
+    top: 505;
     left: 68;
 }
 
@@ -55,7 +56,7 @@ body {
     width: 130px;
     height: 130px;
     display: block;
-    top: 390;
+    top: 375;
     left: 245;
 }
 
@@ -68,7 +69,7 @@ body {
     background: url(static/img/careers.png) no-repeat 0 -48;
     width: 60px;
     height: 48px;
-    top: 514;
+    top: 504;
     left: 62;
 }
 
@@ -81,7 +82,7 @@ body {
     width: 57px;
     height: 57px;
     display: block;
-    top: 702;
+    top: 690;
     left: 419;
 }
 
@@ -94,7 +95,7 @@ body {
     width: 70px;
     height: 31px;
     display: block;
-    top: 474;
+    top: 464;
     left: 560;
 }
 
@@ -107,7 +108,7 @@ body {
     width: 45px;
     height: 90px;
     display: block;
-    top: 422;
+    top: 412;
     left: 65;
 }
 
@@ -120,7 +121,7 @@ body {
     width: 100px;
     height: 26px;
     display: block;
-    top: 338;
+    top: 328;
     left: 246;
 }
 
@@ -128,20 +129,40 @@ body {
     background-position: 0 0px;
 }
 
+#text{
+    margin: 40px auto 0 auto;
+    display: block;
+    width: 75%;
+    line-height: 55px;
+    text-align: center;
+    font-weight: normal;
+}
+
+#text a {
+    text-decoration: none;
+    color: #FF85D6;
+    font-weight: bold;
+}
 
 #tagline {
     display: block;
-    top: 490;
-    left: 150;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #chrome {
-    margin-top: 80px;
+    margin-top: 30px;
     font-size: 8pt;
-    text-align: center;
 }
 
 #chrome a {
     text-decoration: none;
     color: #888;
+}
+
+#head {
+    -moz-box-shadow: 3px 3px 4px #000;
+    -webkit-box-shadow: 3px 3px 4px #000;
+    box-shadow: 3px 3px 4px #000;
 }
