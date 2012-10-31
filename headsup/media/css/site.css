@@ -287,6 +287,12 @@ p#byline {
     font-size: 11px;
     padding: .2em 1em .275em;
 }
+#buyme-box{
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    z-index: 1000;
+}
 #topcorner-box{
     position: absolute;
     top: 20px;
