@@ -295,8 +295,8 @@ p#byline {
 }
 #topcorner-box{
     position: absolute;
-    top: 20px;
-    right: 0px;
+    top: 10px;
+    right: 15px;
     width: 280px;
     height: 156px;
     z-index: 1000;
@@ -310,25 +310,13 @@ p#byline {
     text-align: center;
     display: block;
     font-size: 20pt;
-}
-
-
-a.twitter{
-    padding: 5px 5px 1px 5px;
-    max-width: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 116px;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -o-border-radius: 5px;
-    background-color: #FFF;
-
+    float: left;
 }
 
 #topcorner-box a{
     display: block;
+    float: left;
+    margin-left: 10px;
 }
 
 #topcorner-box img{
