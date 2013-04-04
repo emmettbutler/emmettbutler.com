@@ -48,7 +48,7 @@ body {
     width: 70px;
     height: 64px;
     display: block;
-    top: 523;
+    top: 613;
     left: 68;
 }
 
@@ -61,7 +61,7 @@ body {
     width: 130px;
     height: 130px;
     display: block;
-    top: 394;
+    top: 484;
     left: 245;
 }
 
@@ -74,7 +74,7 @@ body {
     background: url(static/img/careers.png) no-repeat 0 -48;
     width: 60px;
     height: 48px;
-    top: 521;
+    top: 611;
     left: 62;
 }
 
@@ -87,7 +87,7 @@ body {
     width: 57px;
     height: 57px;
     display: block;
-    top: 705;
+    top: 795;
     left: 419;
 }
 
@@ -100,7 +100,7 @@ body {
     width: 50px;
     height: 50px;
     display: block;
-    top: 474;
+    top: 564;
     left: 571;
 }
 
@@ -113,7 +113,7 @@ body {
     width: 45px;
     height: 90px;
     display: block;
-    top: 412;
+    top: 500;
     left: 65;
 }
 
@@ -126,11 +126,24 @@ body {
     width: 100px;
     height: 26px;
     display: block;
-    top: 328;
+    top: 418;
     left: 246;
 }
 
 #tumblr:hover, #tumblr:focus {
+    background-position: 0 0px;
+}
+
+#schemato {
+    background: url(static/img/schemato.png) no-repeat 0 -90;
+    width: 90px;
+    height: 90px;
+    display: block;
+    top: 322;
+    left: 710;
+}
+
+#schemato:hover, #schemato:focus {
     background-position: 0 0px;
 }
 
