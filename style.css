@@ -3,6 +3,14 @@
     src: url(static/fonts/lane.ttf);
 }
 
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: "pragmatica-web", jalane, sans-serif;
     font-size:22pt;
@@ -51,7 +59,7 @@ body {
     width: 70px;
     height: 64px;
     display: block;
-    top: 613;
+    top: 556;
     left: 68;
 }
 
@@ -177,7 +185,7 @@ body {
     font-weight: normal;
 }
 
-#text a {
+a {
     text-decoration: none;
     color: #FF85D6;
     font-weight: bold;
@@ -205,4 +213,20 @@ body {
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
+}
+
+#games-wrapper {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#games-wrapper ul {
+    margin-left: -30px;
+}
+
+#games-wrapper p {
+    text-align: left;
+    font-size: 13pt;
 }
