@@ -216,6 +216,7 @@ a {
 }
 
 #games-wrapper {
+    margin-top: 50px;
     width: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -229,4 +230,20 @@ a {
 #games-wrapper p {
     text-align: left;
     font-size: 13pt;
+}
+
+#nav {
+    height: 40px;
+    font-size: 10pt;
+    position: absolute;
+    top: 0;
+}
+
+#nav a {
+    color: #444;
+}
+
+#nav li {
+    margin-right: 40px;
+    float: left;
 }
