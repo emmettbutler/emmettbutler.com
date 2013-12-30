@@ -196,6 +196,17 @@ a {
     clear: both;
     margin-left: auto;
     margin-right: auto;
+    height: 80px;
+}
+
+#publickey {
+    font-family: monospace;
+    font-size: 9pt;
+    line-height: 10pt;
+    text-align: left;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #chrome {
