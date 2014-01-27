@@ -1,5 +1,6 @@
 *.jar
 .*.swp
+.*.sw*
 .*.un~
 nina
 graphics
