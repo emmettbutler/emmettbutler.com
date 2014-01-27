@@ -11,6 +11,10 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    text-align: center;
+}
+
 body {
     font-family: "pragmatica-web", jalane, sans-serif;
     font-size:22pt;
@@ -224,6 +228,29 @@ a {
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
+}
+
+#games-menu .row {
+    height: 300px;
+    margin-bottom: 20px;
+    font-size: 17pt;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#games-menu .row .game {
+    margin-left: 20px;
+    float: left;
+    width: 260px;
+}
+
+#games-menu .row .game .cap {
+    clear: both;
+}
+
+#games-menu .row .game img {
+    height: 200px;
 }
 
 #games-wrapper {
