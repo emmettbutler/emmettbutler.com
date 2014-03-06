@@ -1,6 +1,6 @@
 @font-face {
     font-family: jalane;
-    src: url(static/fonts/lane.ttf);
+    src: url({{ media_url('fonts/lane.ttf') }});
 }
 
 ul li {
