@@ -1,61 +1,30 @@
 {% extends "base.j2" %}
 
+{% macro gamelink(href, img, title) %}
+    <div class="game">
+        <a href="{{ href }}">
+            <img src="{{ media_url(img) }}" />
+            <div class="cap">{{ title }}</div>
+        </a>
+    </div>
+{% endmacro %}
+
 {% block body %}
     <div id="games-menu">
         <h1>Games</h1>
         <div class="row">
-            <div class="game">
-                <a href="deutscheshaus.html">
-                    <img src="{{ media_url('img/finger.gif') }}" />
-                    <div class="cap">Deutsches Haus Adventure</div>
-                </a>
-            </div>
-            <div class="game">
-                <a href="howdo.html">
-                    <img src="http://i.imgur.com/PJBw4QE.gif" />
-                    <div class="cap">how do you Do It</div>
-                </a>
-            </div>
-            <div class="game">
-                <a href="ladylike.html">
-                    <img src="{{ media_url('img/ladylike.png') }}" />
-                    <div class="cap">Ladylike</div>
-                </a>
-            </div>
+            {{ gamelink("deutscheshaus.html", "img/finger.gif", "Deutsches Haus Adventure") }}
+            {{ gamelink("howdo.html", "img/hdydi.gif", "how do you Do It") }}
+            {{ gamelink("ladylike.html", "img/ladylike.png", "Ladylike") }}
         </div>
         <div class="row">
-          <div class="game">
-              <a href="myrules.html">
-                  <img src="{{ media_url('img/mhmr.png') }}" />
-                  <div class="cap">My House My Rules</div>
-              </a>
-          </div>
-            <div class="game">
-                <a href="fishing.html">
-                    <img src="{{ media_url('img/dad.gif') }}" />
-                    <div class="cap">Hokuto No Huchen</div>
-                </a>
-            </div>
-            <div class="game">
-                <a href="cybrid.html">
-                    <img src="{{ media_url('img/cybrid.png') }}" />
-                    <div class="cap">Cybrid-7X</div>
-                </a>
-            </div>
+            {{ gamelink("myrules.html", "img/mhmr.png", "My House My Rules") }}
+            {{ gamelink("fishing.html", "img/dad.gif", "Hokuto No Huchen") }}
+            {{ gamelink("cybrid.html", "img/cybrid.png", "Cybrid-7X") }}
         </div>
         <div class="row">
-          <div class="game">
-              <a href="http://headsuphotdogs.com">
-                  <img src="{{ media_url('img/hotdog.gif') }}" />
-                  <div class="cap">Heads Up Hot Dogs</div>
-              </a>
-          </div>
-            <div class="game">
-                <a href="http://emmettbutler.com/dokideux">
-                    <img src="{{ media_url('img/AAAAAA.gif') }}" />
-                    <div class="cap">Dokideux Panikku</div>
-                </a>
-            </div>
+            {{ gamelink("http://headsuphotdogs.com", "img/hotdog.gif", "Heads Up Hot Dogs") }}
+            {{ gamelink("http://emmettbutler.com/dokideux", "img/AAAAAA.gif", "Dokideux Panikku") }}
         </div>
     </div>
 {% endblock body %}

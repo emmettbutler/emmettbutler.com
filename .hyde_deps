@@ -7,3 +7,4 @@
 !!python/unicode 'games/myrules.html': [base.j2]
 !!python/unicode 'index.html': [base.j2]
 !!python/unicode 'media/css/style.css': []
+!!python/unicode 'talks/index.html': [base.j2]
