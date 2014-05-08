@@ -36,7 +36,7 @@
                         Please don't hesitate to contact me - I'd love to hear from you! Follow me on Twitter, comment on my blog - it's up to you.
                         <section id="contact-list">
                             <a target=\"_blank\" title="Three Stegosaurus Moon" href="http://threestegosaurusmoon.com"><img src="images/media_icons/wordpress.png" width=64 height=64 /></a>
-                            <a target=\"_blank\" title="@emmett9001" href="http://twitter.com/emmett9001"><img src="images/media_icons/twitter.png" width=64 height=64 /></a>
+                            <a target=\"_blank\" title="@sensitiveemmett" href="http://twitter.com/sensitiveemmett"><img src="images/media_icons/twitter.png" width=64 height=64 /></a>
 			                <a target=\"_blank\" title="Github" href="http://github.com/emmett9001"><img src="images/media_icons/github.png" width=64 height=64 /></a>
                             <a target=\"_blank\" title="emmett9001" href="http://emmett9001.tumblr.com"><img src="images/media_icons/tumblr.png" width=64 height=64 /></a>
                             <a target=\"_blank\" title="LinkedIn" href="http://linkedin.com/in/emmett9001"><img src="images/media_icons/linkedin.png" width=58 height=58 /></a>

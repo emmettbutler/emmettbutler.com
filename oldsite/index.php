@@ -107,7 +107,7 @@
 	    <div id="boxtop-left"></div>
 	    <div id="twitter">
 		<div id="twitter_div">
-		    <div id="twitter-title"><a target=\"_blank\" href="http://twitter.com/emmett9001">
+		    <div id="twitter-title"><a target=\"_blank\" href="http://twitter.com/sensitiveemmett">
 			    <img src="images/twitter.png"/>
 		    </a></div>
 		    <ul id="twitter_update_list"></ul>
@@ -148,7 +148,7 @@
 		    }*/
 		?>
 		<div id="followlink">
-		    <a a target=\"_blank\" href="http://twitter.com/emmett9001"><img src="images/followme.png"></a>
+		    <a a target=\"_blank\" href="http://twitter.com/sensitiveemmett"><img src="images/followme.png"></a>
 		</div>
 	    </div>
 	    <div id="boxbottom-left"></div>

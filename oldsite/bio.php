@@ -42,7 +42,7 @@
                     </p>
                     <p>I collect a lot of silly t-shirts, I have weird hair, I hang out in NYU CS and Music Tech a lot, and I'm generally "that guy over there with the mohawk, with headphones and a laptop, typing furiously and making strange facial expressions at his screen.
                     </p>
-                    <p>If you maybe want to say hi to me/collaborate with me on a video game/just play video games, <a href="http://twitter.com/emmett9001">Twitter is unquestionably your best bet</a>. Thanks for coming.
+                    <p>If you maybe want to say hi to me/collaborate with me on a video game/just play video games, <a href="http://twitter.com/sensitiveemmett">Twitter is unquestionably your best bet</a>. Thanks for coming.
                     </div>
                 </div>
                 <div id="boxbottom-left"></div>
