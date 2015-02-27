@@ -270,6 +270,19 @@ a {
     font-size: 13pt;
 }
 
+#games-wrapper #badges-container {
+    width: 100%;
+    height: 100px;
+}
+
+#games-wrapper #badges-container a.badge {
+    display: block;
+}
+
+#games-wrapper #badges-container a.badge img {
+    display: block;
+}
+
 #nav {
     height: 40px;
     font-size: 10pt;
