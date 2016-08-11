@@ -2,8 +2,8 @@
     <head>
         <style type="text/css">
             #chart_div {
-                width: 700px;
-                height: 100px;
+                width: 850px;
+                height: 80px;
             }
         </style>
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -53,10 +53,20 @@
                     },
                     vAxis: {
                         logScale: false,
-                        format: ""
+                        format: "",
+                        gridlines: {
+                            count: 3,
+                            color: "#dddddd"
+                        },
+                        textStyle: {
+                            color: "#efd962"
+                        }
                     },
                     legend: "none",
-                    colors: ['#a52714', '#097138']
+                    colors: ['#efd962', '#097138'],
+                    backgroundColor: {
+                        fill: "transparent"
+                    }
                 };
 
                 var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
@@ -73,7 +83,6 @@
         </button>
         </div>
         <pre id="output"></pre>
-        Limited Rating Over Time
         <div id="chart_div"></div>
     </body>
 </html>
