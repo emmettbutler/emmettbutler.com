@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <style type="text/css">
+            #chart_div {
+                width: 700px;
+                height: 100px;
+            }
+        </style>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            google.charts.load('current', {packages: ['corechart', 'line']});
+            var CLIENT_ID = '1035823401208-l9o6thv1tahnkktrg5jlk2pg805b39hm.apps.googleusercontent.com';
+            var SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"];
+
+            function checkAuth() {
+                gapi.auth.authorize(
+                {
+                    'client_id': CLIENT_ID,
+                    'scope': SCOPES.join(' '),
+                    'immediate': true
+                }, handleAuthResult);
+            }
+
+            function handleAuthResult(authResult) {
+                var authorizeDiv = document.getElementById('authorize-div');
+                if (authResult && !authResult.error) {
+                    authorizeDiv.style.display = 'none';
+                    var discoveryUrl =
+                        'https://sheets.googleapis.com/$discovery/rest?version=v4';
+                    gapi.client.load(discoveryUrl).then(fetchData);
+                } else {
+                    authorizeDiv.style.display = 'inline';
+                }
+            }
+
+            function handleAuthClick(event) {
+                gapi.auth.authorize(
+                    {client_id: CLIENT_ID, scope: SCOPES, immediate: false},
+                    handleAuthResult);
+                return false;
+            }
+
+            function fetchData() {
+                gapi.client.sheets.spreadsheets.values.get({
+                    spreadsheetId: '1OaVIl6bFme3n7chMRo1J0qsJtX8Al4aP0xOqpFYIEzE',
+                    range: 'Sheet1!A2:D',
+                }).then(function(response) {
+                    if (response.result.values.length > 0) {
+                        drawChart(response.result);
+                    } else {
+                        console.log('No data found.');
+                    }
+                }, function(response) {
+                    console.log('Error: ' + response.result.error.message);
+                });
+            }
+
+            function drawChart(range) {
+                var data = new google.visualization.DataTable();
+                data.addColumn('date', 'Date');
+                data.addColumn('number', 'Rating');
+
+                for (i = Math.max(0, range.values.length - 15); i < range.values.length; i++) {
+                    var row = range.values[i];
+                    data.addRow([new Date(row[0]), parseInt(row[1])]);
+                }
+
+                var options = {
+                    hAxis: {
+                        logScale: false,
+                        textStyle: {
+                            color: "none"
+                        },
+                        gridlines: {
+                            color: "none"
+                        }
+                    },
+                    vAxis: {
+                        logScale: false,
+                        format: ""
+                    },
+                    legend: "none",
+                    colors: ['#a52714', '#097138']
+                };
+
+                var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+                    chart.draw(data, options);
+                }
+        </script>
+        <script src="https://apis.google.com/js/client.js?onload=checkAuth"></script>
+    </head>
+    <body>
+        <div id="authorize-div" style="display: none">
+        <span>Authorize access to Google Sheets API</span>
+        <button id="authorize-button" onclick="handleAuthClick(event)">
+            Authorize
+        </button>
+        </div>
+        <pre id="output"></pre>
+        Limited Rating Over Time
+        <div id="chart_div"></div>
+    </body>
+</html>
