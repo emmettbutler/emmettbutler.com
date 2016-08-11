@@ -9,50 +9,26 @@
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script type="text/javascript">
             google.charts.load('current', {packages: ['corechart', 'line']});
-            var CLIENT_ID = '1035823401208-l9o6thv1tahnkktrg5jlk2pg805b39hm.apps.googleusercontent.com';
-            var SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"];
+            google.charts.setOnLoadCallback(httpGet);
 
-            function checkAuth() {
-                gapi.auth.authorize(
-                {
-                    'client_id': CLIENT_ID,
-                    'scope': SCOPES.join(' '),
-                    'immediate': true
-                }, handleAuthResult);
-            }
-
-            function handleAuthResult(authResult) {
-                var authorizeDiv = document.getElementById('authorize-div');
-                if (authResult && !authResult.error) {
-                    authorizeDiv.style.display = 'none';
-                    var discoveryUrl =
-                        'https://sheets.googleapis.com/$discovery/rest?version=v4';
-                    gapi.client.load(discoveryUrl).then(fetchData);
-                } else {
-                    authorizeDiv.style.display = 'inline';
-                }
-            }
-
-            function handleAuthClick(event) {
-                gapi.auth.authorize(
-                    {client_id: CLIENT_ID, scope: SCOPES, immediate: false},
-                    handleAuthResult);
-                return false;
-            }
-
-            function fetchData() {
-                gapi.client.sheets.spreadsheets.values.get({
-                    spreadsheetId: '1OaVIl6bFme3n7chMRo1J0qsJtX8Al4aP0xOqpFYIEzE',
-                    range: 'Sheet1!A2:D',
-                }).then(function(response) {
-                    if (response.result.values.length > 0) {
-                        drawChart(response.result);
-                    } else {
-                        console.log('No data found.');
+            function httpGet() {
+                var callback = function(text) {
+                    var parsed = JSON.parse(text.slice(47, text.length - 2));
+                    var range = [], row = undefined;
+                    for (var i = 0; i < parsed.table.rows.length; i++) {
+                        row = parsed.table.rows[i];
+                        console.log(row);
+                        range.push([row.c[0].f, row.c[1].f]);
                     }
-                }, function(response) {
-                    console.log('Error: ' + response.result.error.message);
-                });
+                    drawChart(range);
+                };
+                var xmlHttp = new XMLHttpRequest();
+                xmlHttp.onreadystatechange = function() {
+                    if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+                        callback(xmlHttp.responseText);
+                }
+                xmlHttp.open("GET",  "https://spreadsheets.google.com/tq?key=1OaVIl6bFme3n7chMRo1J0qsJtX8Al4aP0xOqpFYIEzE", true);
+                xmlHttp.send(null);
             }
 
             function drawChart(range) {
@@ -60,8 +36,8 @@
                 data.addColumn('date', 'Date');
                 data.addColumn('number', 'Rating');
 
-                for (i = Math.max(0, range.values.length - 15); i < range.values.length; i++) {
-                    var row = range.values[i];
+                for (i = Math.max(0, range.length - 20); i < range.length; i++) {
+                    var row = range[i];
                     data.addRow([new Date(row[0]), parseInt(row[1])]);
                 }
 
