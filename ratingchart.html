@@ -18,7 +18,7 @@
                     for (var i = 0; i < parsed.table.rows.length; i++) {
                         row = parsed.table.rows[i];
                         console.log(row);
-                        range.push([row.c[0].f, row.c[1].f]);
+                        range.push([i, row.c[1].f]);
                     }
                     drawChart(range);
                 };
@@ -33,12 +33,12 @@
 
             function drawChart(range) {
                 var data = new google.visualization.DataTable();
-                data.addColumn('date', 'Date');
+                data.addColumn('number', 'Index');
                 data.addColumn('number', 'Rating');
 
                 for (i = Math.max(0, range.length - 20); i < range.length; i++) {
                     var row = range[i];
-                    data.addRow([new Date(row[0]), parseInt(row[1])]);
+                    data.addRow([row[0], parseInt(row[1])]);
                 }
 
                 var options = {
