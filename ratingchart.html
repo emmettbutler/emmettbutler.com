@@ -5,20 +5,39 @@
                 width: 850px;
                 height: 80px;
             }
+
+            #win_pct {
+                width: 300px;
+                margin-left: 78px;
+                margin-top: -8px;
+                color: #eed24d;
+                font-weight: 600;
+                font-family: sans-serif;
+            }
         </style>
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
         <script type="text/javascript">
             google.charts.load('current', {packages: ['corechart', 'line']});
             google.charts.setOnLoadCallback(httpGet);
+
+            var rowsCount = 20;
 
             function httpGet() {
                 var callback = function(text) {
                     var parsed = JSON.parse(text.slice(47, text.length - 2));
                     var range = [], row = undefined;
-                    for (var i = 0; i < parsed.table.rows.length; i++) {
-                        row = parsed.table.rows[i];
-                        console.log(row);
-                        range.push([i, row.c[1].f]);
+                    var rows = parsed.table.rows;
+                    for (var i = Math.max(0, rows.length - rowsCount); i < rows.length; i++) {
+                        range.push({
+                            idx: i,
+                            rating: rows[i].c[1].v,
+                            matchWins: rows[i].c[2].v,
+                            matchLosses: rows[i].c[3].v,
+                            gameWins: rows[i].c[4].v,
+                            gameLosses: rows[i].c[5].v,
+                            allTimeHigh: rows[i].c[7].v
+                        });
                     }
                     drawChart(range);
                 };
@@ -36,10 +55,15 @@
                 data.addColumn('number', 'Index');
                 data.addColumn('number', 'Rating');
 
-                for (i = Math.max(0, range.length - 20); i < range.length; i++) {
-                    var row = range[i];
-                    data.addRow([row[0], parseInt(row[1])]);
+                var totalWins = 0, totalLosses = 0, row;
+                for (i = Math.max(0, range.length - rowsCount); i < range.length; i++) {
+                    row = range[i];
+                    totalWins += row.gameWins || row.matchWins;
+                    totalLosses += row.gameLosses || row.matchLosses;
+                    data.addRow([row.idx, row.rating]);
                 }
+                var winPct = (totalWins / (totalWins + totalLosses)) * 100;
+                $("#win_pct").text(winPct.toFixed(0) + "% win rate - Personal Best: " + range[range.length - 1].allTimeHigh);
 
                 var options = {
                     hAxis: {
@@ -85,5 +109,6 @@
         </div>
         <pre id="output"></pre>
         <div id="chart_div"></div>
+        <div id="win_pct"></div>
     </body>
 </html>
