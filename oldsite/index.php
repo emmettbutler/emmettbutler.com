@@ -91,13 +91,13 @@
 	    <div id="tumblrboxtop"></div>
 	    <div id="tumblr">
 		<div id="tumblelog-title">
-		    <a target=\"_blank\" href="http://emmett9001.tumblr.com"><img src="images/tumblr.png"/></a>
+		    <a target=\"_blank\" href="http://sensitiveemmett.tumblr.com"><img src="images/tumblr.png"/></a>
 		</div>
 		<div id="tumblr-body">
-		    <script type="text/javascript" src="http://emmett9001.tumblr.com/js?num=3"></script>
+		    <script type="text/javascript" src="http://sensitiveemmett.tumblr.com/js?num=3"></script>
 		</div>
 		<div id="followlink">
-		    <a a target=\"_blank\" href="http://emmett9001.tumblr.com"><img src="images/followme.png"></a>
+		    <a a target=\"_blank\" href="http://sensitiveemmett.tumblr.com"><img src="images/followme.png"></a>
 		</div>
 	    </div>
 	    <div id="tumblrboxbottom"></div>
